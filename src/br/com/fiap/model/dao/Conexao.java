@@ -14,8 +14,8 @@ public class Conexao {
 		Connection con = null;
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		String url ="jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-		final String USER = "rm550657";
-		final String PASS = "260305";
+		final String USER = "user";
+		final String PASS = "password";
 		con = DriverManager.getConnection(url, USER, PASS);
 		System.out.println("Conexao aberta!");
 		return con;
